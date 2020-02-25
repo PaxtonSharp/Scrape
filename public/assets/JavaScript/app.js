@@ -16,7 +16,7 @@ $(document).ready(function () {
       html += `<div class="row"><div class="col-7"><p>${article.summary}</p></div>`;
       html += `<div class="col-3"><img class='article-img img-fluid' src=${article.imageSrc}></div>`;
       html += `<div class="col-2">`
-      article.isFavorite ? html += `<button data-id=${article._id} id=favorite-btn-${article._id} class="btn btn-danger favorite favorite-btn">Unfavorite</button>` : html += `<button data-id=${article._id} id=favorite-btn-${article._id} class="btn btn-primary favorite-btn">Favorite</button>`     
+      article.isFavorite ? html += `<button data-id=${article._id} id=favorite-btn-${article._id} class="btn btn-primary favorite favorite-btn">Unfavorite</button>` : html += `<button data-id=${article._id} id=favorite-btn-${article._id} class="btn btn-success favorite-btn">Favorite</button>`     
       html += `<a href=${article.link}><button id="read-btn-${article._id}" class="btn btn-warning link-btn">To Article</button></a>`
       html += `<div id="note-${article._id}"></div></div></div>`
       html += `<hr size="10">`
